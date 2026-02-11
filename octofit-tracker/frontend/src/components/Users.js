@@ -15,6 +15,9 @@ function Users() {
   const baseUrl = codespace 
     ? `https://${codespace}-8000.app.github.dev/api`
     : 'http://localhost:8000/api';
+  const usersEndpoint = codespace
+    ? `https://${codespace}-8000.app.github.dev/api/users/`
+    : 'http://localhost:8000/api/users/';
 
   useEffect(() => {
     fetchUsers();
@@ -22,7 +25,7 @@ function Users() {
   }, []);
 
   const fetchUsers = () => {
-    const apiUrl = `${baseUrl}/users/`;
+    const apiUrl = usersEndpoint;
     console.log('Users - Fetching from:', apiUrl);
 
     fetch(apiUrl)
