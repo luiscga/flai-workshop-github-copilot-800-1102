@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <defs>
+    <style>
+      .nos-text { fill: #00b0ca; font-family: Arial, sans-serif; font-weight: 900; font-size: 32px; }
+    </style>
+  </defs>
+  <text x="10" y="32" class="nos-text">NOS</text>
+</svg>
